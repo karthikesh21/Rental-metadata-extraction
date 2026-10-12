@@ -18,7 +18,7 @@ The system processes both **digital DOCX documents** and **scanned PNG images**,
 4. [Technology Stack](#4-technology-stack)
 5. [Project Structure](#5-project-structure)
 6. [Security & Gemini API Configuration](#6-security--gemini-api-configuration)
-7. [Python Environment Setup & Installation](#7-python-environment-setup--installation)
+7. [Quickstart Setup](#7-quickstart-setup)
 8. [How to Run the Notebook from Beginning to End](#8-how-to-run-the-notebook-from-beginning-to-end)
 9. [Generating `predictions.csv`](#9-generating-predictionscsv)
 10. [Reproducing Strict and Normalized Recall Calculations](#10-reproducing-strict-and-normalized-recall-calculations)
@@ -168,24 +168,18 @@ This fulfills the assignment directive:
 
 ---
 
-## 7. Python Environment Setup & Installation
+## 7. Quickstart Setup
 
-### Windows (PowerShell)
 ```powershell
-# 1. Navigate to the project directory
-cd "C:\Users\karth\OneDrive\Desktop\Assignment-1"
-
-# 2. Create and activate a Python virtual environment
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-
-# 3. Upgrade pip and install required dependencies
-pip install --upgrade pip
+# 1. Install dependencies
 pip install -r requirements.txt
 
-# 4. Copy and populate the environment configuration
+# 2. Configure API key
 Copy-Item .env.example .env
 # Edit .env with your actual GEMINI_API_KEY
+
+# 3. Launch notebook
+jupyter notebook Rental_Agreement_Metadata_Extraction.ipynb
 ```
 
 ---
