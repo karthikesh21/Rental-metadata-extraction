@@ -1,0 +1,33 @@
+======================================================================
+  UseReady Assignment 1-1: Rental Agreement Metadata Extraction Report
+======================================================================
+Active AI Model:           gemini-3.5-flash-lite
+Total Test Documents:      4
+Total Field Comparisons:   24
+----------------------------------------------------------------------
+STRICT EXACT-MATCH EVALUATION (Default Assignment Metric):
+Overall Strict Recall:     95.83% (23/24 fields)
+
+  - Aggrement Value         : 100.00% (4/4 matched)
+  - Aggrement Start Date    : 100.00% (4/4 matched)
+  - Aggrement End Date      : 100.00% (4/4 matched)
+  - Renewal Notice (Days)   : 100.00% (4/4 matched)
+  - Party One               : 100.00% (4/4 matched)
+  - Party Two               :  75.00% (3/4 matched)
+
+----------------------------------------------------------------------
+NORMALIZED EVALUATION (Whitespace & Punctuation Cleaned):
+Overall Normalized Recall: 100.00% (24/24 fields)
+
+  - Aggrement Value         : 100.00% (4/4 matched)
+  - Aggrement Start Date    : 100.00% (4/4 matched)
+  - Aggrement End Date      : 100.00% (4/4 matched)
+  - Renewal Notice (Days)   : 100.00% (4/4 matched)
+  - Party One               : 100.00% (4/4 matched)
+  - Party Two               : 100.00% (4/4 matched)
+======================================================================
+ARTIFACTS CREATED:
+  1. predictions.csv:          C:\Users\karth\OneDrive\Desktop\Assignment-1\predictions.csv
+  2. evaluation_report.txt:    C:\Users\karth\OneDrive\Desktop\Assignment-1\evaluation_report.txt
+  3. evaluation_recall_chart.png: C:\Users\karth\OneDrive\Desktop\Assignment-1\evaluation_recall_chart.png
+======================================================================
