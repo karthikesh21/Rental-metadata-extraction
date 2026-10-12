@@ -118,22 +118,20 @@ The system extracts exactly six structured metadata fields:
 As mandated by the assignment guidelines, the **entire core implementation resides inside a single Jupyter Notebook**. No external standalone scripts are required:
 
 ```text
-Assignment-1/
+Rental-metadata-extraction/
 ├── Rental_Agreement_Metadata_Extraction.ipynb   # Complete runnable implementation (16 sections)
-├── data/
-│   ├── train.csv                               # Labelled training dataset
-│   ├── test.csv                                # Ground truth evaluation labels
-│   ├── train/                                  # DOCX and PNG training documents
-│   └── test/                                   # DOCX and PNG test documents (4 documents)
 ├── predictions.csv                             # Generated predictions on test agreements
 ├── evaluation_report.txt                       # Detailed exact-match evaluation metrics
 ├── evaluation_recall_chart.png                 # Visualization of per-field recall
 ├── Rental_Agreement_Extraction_Data.docx       # Supporting assignment documentation
+├── Demo.pdf                                    # Project demonstration & export report
 ├── requirements.txt                            # Pinned dependency requirements
 ├── .env.example                                # Configuration template (no secrets)
-├── .gitignore                                  # Git exclusion rules (protects secrets & data)
+├── .gitignore                                  # Git exclusion rules (protects .env, .venv & data/)
 └── README.md                                   # Comprehensive documentation
 ```
+
+> **Note on Data Directory:** Raw agreement documents and labels (`data/`) are excluded from GitHub tracking via `.gitignore` to preserve privacy and confidentiality of rental agreements. All reproducible extraction outputs, predictions, and evaluation metrics are preserved directly in `predictions.csv` and `evaluation_report.txt`.
 
 ---
 
