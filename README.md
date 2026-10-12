@@ -1,4 +1,4 @@
-# UseReady Assignment 1-1: AI-Based Metadata Extraction from Rental Agreements
+# UseReady Assignment 1: AI-Based Metadata Extraction from Rental Agreements
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![Google Gemini API](https://img.shields.io/badge/Google%20GenAI-Gemini%20API-orange.svg)](https://ai.google.dev/)
