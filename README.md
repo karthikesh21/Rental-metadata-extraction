@@ -125,14 +125,13 @@ Assignment-1/
 │   ├── test.csv                                # Ground truth evaluation labels
 │   ├── train/                                  # DOCX and PNG training documents
 │   └── test/                                   # DOCX and PNG test documents (4 documents)
-├── predictions.csv                             # Generated predictions on data/test/
+├── predictions.csv                             # Generated predictions on test agreements
 ├── evaluation_report.txt                       # Detailed exact-match evaluation metrics
 ├── evaluation_recall_chart.png                 # Visualization of per-field recall
-├── Rental_Agreement_Extraction_Data_Final.docx # Supporting assignment documentation
+├── Rental_Agreement_Extraction_Data.docx       # Supporting assignment documentation
 ├── requirements.txt                            # Pinned dependency requirements
 ├── .env.example                                # Configuration template (no secrets)
-├── .env                                        # Local configuration (strictly gitignored)
-├── .gitignore                                  # Git exclusion rules
+├── .gitignore                                  # Git exclusion rules (protects secrets & data)
 └── README.md                                   # Comprehensive documentation
 ```
 
