@@ -328,19 +328,9 @@ Implemented directly in **Section 14** of the notebook. All unit tests run in se
 **Result:** `10 / 10 tests passed successfully.`
 
 ---
- 
-## 14. Troubleshooting Guide
 
-| Issue | Cause | Solution |
-|---|---|---|
-| **`GEMINI_API_KEY is not configured`** | Missing `.env` file or empty key. | Create `.env` using `.env.example` and set `GEMINI_API_KEY`. |
-| **`429 RESOURCE_EXHAUSTED`** | Daily quota limit reached on the active model. | Notebook automatically probes and switches to alternative verified Flash models (`gemini-3.5-flash-lite`, `gemini-3.1-flash-lite`). |
-| **`HTTP 415 Unsupported Media Type`** | Uploaded file is not `.docx` or `.png`. | Upload only supported agreement formats (`.docx` or `.png`). |
-| **`Script Execution Error (PowerShell)`** | PowerShell execution policy restriction. | Run `Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass` before activating `.venv`. |
 
----
-
-## 15. Limitations & Future Enhancements
+## 14. Limitations & Future Enhancements
 
 1. **Test Set Scale:** The test suite evaluates 4 agreements. Expanding testing to larger datasets across different Indian states will validate stamp duty and regional naming variations.
 2. **Low-Resolution Scans:** Extremely low-DPI or noisy mobile captures can benefit from automated deskewing and adaptive contrast enhancement prior to vision input.
