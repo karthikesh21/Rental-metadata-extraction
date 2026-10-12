@@ -3,9 +3,6 @@
 *.env
 !.env.example
 
-# Datasets and confidential agreement documents
-data/
-
 # Python cache & virtual environment
 __pycache__/
 *.py[cod]
