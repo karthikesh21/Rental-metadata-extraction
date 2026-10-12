@@ -330,7 +330,7 @@ Implemented directly in **Section 14** of the notebook. All unit tests run in se
 **Result:** `10 / 10 tests passed successfully.`
 
 ---
-
+ 
 ## 14. Troubleshooting Guide
 
 | Issue | Cause | Solution |
