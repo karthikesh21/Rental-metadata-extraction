@@ -309,28 +309,8 @@ Interactive Swagger API documentation is available at `http://127.0.0.1:8000/doc
 
 ---
 
-## 13. Automated Testing Suite
 
-Implemented directly in **Section 14** of the notebook. All unit tests run in seconds using `unittest.mock` to mock Gemini API calls ($0 cost, 100% offline).
-
-### Tests Included:
-1. **Compound Extension Stripping:** Verifies `.pdf.docx`, `.docx`, and `.png` handling.
-2. **Pydantic Schema Validation:** Validates `RentalMetadata` fields and instantiation.
-3. **Normalization Logic:** Verifies whitespace and outer punctuation stripping without corrupting internal initials.
-4. **Image Verification:** Verifies image opening and header validation with Pillow.
-5. **DOCX Parsing:** Verifies paragraph and tabular extraction with `python-docx`.
-6. **Mocked Gemini Extraction:** Verifies extraction output mapping with mocked LLM response.
-7. **Strict Recall Formula:** Mathematical verification of the recall computation.
-8. **Fallback Handling:** Ensures empty string fallback on unparseable/error responses.
-9. **FastAPI Rejection:** Verifies unsupported file types receive `HTTP 415 Unsupported Media Type`.
-10. **Predictions Schema Alignment:** Ensures `predictions.csv` columns match `data/test.csv` headers exactly.
-
-**Result:** `10 / 10 tests passed successfully.`
-
----
-
-
-## 14. Limitations & Future Enhancements
+## 13. Limitations & Future Enhancements
 
 1. **Test Set Scale:** The test suite evaluates 4 agreements. Expanding testing to larger datasets across different Indian states will validate stamp duty and regional naming variations.
 2. **Low-Resolution Scans:** Extremely low-DPI or noisy mobile captures can benefit from automated deskewing and adaptive contrast enhancement prior to vision input.
