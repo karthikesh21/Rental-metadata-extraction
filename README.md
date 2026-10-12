@@ -189,24 +189,6 @@ Copy-Item .env.example .env
 # Edit .env with your actual GEMINI_API_KEY
 ```
 
-### Linux / macOS (Bash)
-```bash
-# 1. Navigate to the project directory
-cd /path/to/Assignment-1
-
-# 2. Create and activate virtual environment
-python3 -m venv .venv
-source .venv/bin/activate
-
-# 3. Upgrade pip and install dependencies
-pip install --upgrade pip
-pip install -r requirements.txt
-
-# 4. Copy and populate environment configuration
-cp .env.example .env
-# Edit .env with your actual GEMINI_API_KEY
-```
-
 ---
 
 ## 8. How to Run the Notebook from Beginning to End
